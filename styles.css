@@ -1,9 +1,11 @@
+/* General Reset and Base Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -34,6 +36,11 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    color: #ff6f61; /* Change color on hover */
+}
+
+/* Search Bar Styles */
 .search-bar {
     display: flex;
     align-items: center;
@@ -55,6 +62,11 @@ nav ul li a {
     cursor: pointer;
 }
 
+.search-bar button:hover {
+    background-color: #ff5a47; /* Darken button on hover */
+}
+
+/* User and Cart Icons Styles */
 .user-cart {
     display: flex;
     align-items: center;
@@ -65,6 +77,63 @@ nav ul li a {
     color: #333;
     margin-right: 15px;
 }
+
+/* Product Listings Styles */
+.product-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    width: 250px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 16px;
+    color: #ff6f61;
+}
+
+.product button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #ff5a47; /* Darken button on hover */
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
 /* Example Media Query for Responsive Design */
 @media (max-width: 768px) {
     nav ul {
@@ -76,11 +145,4 @@ nav ul li a {
         margin-top: 10px;
         justify-content: center;
     }
-}
-nav ul li a:hover {
-    color: #ff6f61; /* Change color on hover */
-}
-
-.search-bar button:hover {
-    background-color: #ff5a47; /* Darken button on hover */
 }
